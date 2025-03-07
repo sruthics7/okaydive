@@ -10436,7 +10436,8 @@ body.boxed {
 .response,
 .color-main {
 	border-color: #fdd123;
-	color: #fdd123 !important;
+	color: #0091e5
+	!important;
 }
 
 .color-main2 {
@@ -10490,7 +10491,7 @@ body.boxed {
 }
 
 .links-maincolor-hover:not(.btn):hover {
-	color: #fdd123 !important;
+	color: #0091e5 !important;
 }
 
 .links-maincolor a {
@@ -12217,7 +12218,11 @@ aside > * + * {
 	line-height: 1;
 	margin-bottom: 20px;
 }
+ 
 
+.widget .widget-title ul{
+	line-height: 2;
+}
 .widget > h2:last-child {
 	line-height: 1;
 }
@@ -12976,6 +12981,7 @@ widget_recent_entries
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	line-height:2;
 }
 
 .widget_flickr li {
@@ -14556,7 +14562,10 @@ a.fa-cc-stripe.bg-icon:hover,
 .color-bg-icon.fa-cc-visa,
 a.fa-cc-visa.bg-icon:hover,
 .fa-cc-visa.color-icon.border-icon:hover {
-	background-color: #0157a2;
+	background-color: #0091e5;
+
+
+	;
 }
 
 .color-bg-icon.fa-chrome,
@@ -15304,7 +15313,7 @@ a.border-icon.color-icon:hover {
 }
 
 a.bg-icon {
-	background-color: #fdd123;
+	background-color:#0091e5	;
 }
 
 a.color-bg-icon {

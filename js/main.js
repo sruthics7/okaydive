@@ -1335,24 +1335,24 @@ function windowLoadInit() {
 
 	//Flickr widget
 	// use http://idgettr.com/ to find your ID
-	if ($().jflickrfeed) {
-		var $flickr = $("#flickr, .flickr_ul");
-		if ( $flickr.length ) {
-			if ( ! ( $flickr.hasClass('flickr_loaded') ) ) {
-				$flickr.jflickrfeed({
-					flickrbase: "http://api.flickr.com/services/feeds/",
-					limit: 6,
-					qstrings: {
-						id: "131791558@N04"
-					},
-					itemTemplate: '<a href="{{image_b}}" class="photoswipe-link"><li><img alt="{{title}}" src="{{image_m}}" /></li></a>'
-				//complete
-				}, function(data) {
-					initPhotoSwipe();
-				}).addClass('flickr_loaded');
-			}
-		}
-	}
+	// if ($().jflickrfeed) {
+	// 	var $flickr = $("#flickr, .flickr_ul");
+	// 	if ( $flickr.length ) {
+	// 		if ( ! ( $flickr.hasClass('flickr_loaded') ) ) {
+	// 			$flickr.jflickrfeed({
+	// 				flickrbase: "http://api.flickr.com/services/feeds/",
+	// 				limit: 6,
+	// 				qstrings: {
+	// 					id: "131791558@N04"
+	// 				},
+	// 				itemTemplate: '<a href="{{image_b}}" class="photoswipe-link"><li><img alt="{{title}}" src="{{image_m}}" /></li></a>'
+	// 			//complete
+	// 			}, function(data) {
+	// 				initPhotoSwipe();
+	// 			}).addClass('flickr_loaded');
+	// 		}
+	// 	}
+	// }
 
 	// Instagram widget
 	if($().spectragram) {
