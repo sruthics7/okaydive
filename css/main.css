@@ -1492,7 +1492,7 @@ aside [role="tablist"] .card .card-body::before {
 
 [role="tablist"] .card .card-header a:after {
 	align-items: center;
-	background-color: #fdd123;
+	background-color: #0091e5;
 	border: 1px solid #e1e1e1;
 	border-radius: 50%;
 	bottom: auto;
@@ -7782,7 +7782,7 @@ img {
 }
 
 .s-overlay.cs:before {
-	background-color: #fdd123;
+	background-color: #4491da;
 	opacity: 0.82;
 }
 
@@ -11619,7 +11619,7 @@ span.muted-bg {
 }
 
 .price-layout-1 .price-wrap .plan-price {
-	font-size: 100px;
+	font-size: 60px;
 }
 
 .price-layout-1 .price-wrap .plan-sign {
@@ -17896,7 +17896,7 @@ h4.entry-title {
 }
 
 .post > .fa:after {
-	border-color: transparent transparent #fdd123 transparent;
+	border-color: transparent transparent #0091e5 transparent;
 	border-style: solid;
 	border-width: 0 40px 40px 40px;
 	content: "";
@@ -18771,7 +18771,7 @@ img.absolute_image {
 
 .page_title.cover-background,
 .page_title.s-parallax {
-	background-image: url("../images/page_header.jpg");
+	background-image: url("../images/pagehead.jpg");
 }
 
 .page_title h1,
