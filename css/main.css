@@ -11,7 +11,7 @@
 *
 
 Accent Colors:
-1: #fdd123
+1: #0091e5
 2: #2394fd
 3: #3bbf31
 4: #d22348
@@ -279,7 +279,7 @@ a {
 }
 
 a:hover {
-	color: #2394fd;
+	color: #0091e5;
 	text-decoration: none;
 	transition: all 0.15s linear 0s;
 }
@@ -449,7 +449,7 @@ table th {
 }
 
 .no_border th:nth-of-type(5n+5) {
-	color: #2c7eff;
+	color: #0091e5;
 }
 
 .no_border td {
@@ -601,7 +601,7 @@ pre {
 }
 
 .owl-carousel.owl-theme:not(.owl-topline-news-slider) .owl-nav > div i {
-	color: #1987c2;
+	color: #0091e5;
 	font-size: 14px;
 }
 
@@ -616,7 +616,7 @@ pre {
 }
 
 .owl-carousel.owl-theme:not(.owl-topline-news-slider) .owl-nav > div:first-child:hover {
-	background-color: #1987c2;
+	background-color: #0091e5;
 	left: 5px;
 }
 
@@ -759,7 +759,7 @@ ul.list-styled li {
 
 .list-styled ul li:before,
 ul.list-styled li:before {
-	color: #1987c2;
+	color: #0091e5;
 	content: "\f00c";
 	font-family: "FontAwesome";
 	font-size: 14px;
@@ -1825,7 +1825,7 @@ h6 small {
 }
 
 .label-info {
-	background-color: #007ebd;
+	background-color: #0091e5;
 	color: #fff;
 }
 
@@ -1880,7 +1880,7 @@ progressbar*/
 }
 
 .progress.donate-progress .progress-bar span {
-	border: 2px solid #2394fd;
+	border: 2px solid #0091e5;
 	display: inline-block;
 	line-height: 1;
 	padding: 5px;
@@ -1892,7 +1892,7 @@ progressbar*/
 
 .progress.donate-progress .progress-bar span::before {
 	border: 3px solid transparent;
-	border-top: 3px solid #2394fd;
+	border-top: 3px solid #0091e5;
 	content: "";
 	left: 50%;
 	position: absolute;
@@ -7782,12 +7782,12 @@ img {
 }
 
 .s-overlay.cs:before {
-	background-color: #4491da;
+	background-color: #0d425e;
 	opacity: 0.82;
 }
 
 .s-overlay.cs.cs2:before {
-	background-color: #2394fd;
+	background-color: #0091e5;
 }
 
 .s-overlay.cs.cs3:before {
@@ -8764,13 +8764,13 @@ body.boxed {
 }
 
 .btn-maincolor {
-	border-color: #0187e3;
+	border-color: #0091e5;
 	color: #ffffff;
 
 }
 
 .btn-maincolor::before {
-	background-color: #0187e3;
+	background-color: #0091e5;
 }
 
 .btn-maincolor:hover {
@@ -8778,12 +8778,12 @@ body.boxed {
 }
 
 .btn-maincolor2 {
-	border-color: #2394fd;
+	border-color: #0091e5;
 	color: white;
 }
 
 .btn-maincolor2::before {
-	background-color: #2394fd;
+	background-color: #0091e5;
 }
 
 .btn-maincolor2:hover {
@@ -9542,11 +9542,11 @@ body.boxed {
 
 .ds a.bg-icon {
 	background-color: #0091e5;
-	color: #0d425e;
+	color: #fff;
 }
 
 .ds .fa.color-icon:hover {
-	color: #fff;
+	color: #0d425e;
 }
 
 .ds .color-icon.bg-icon {
@@ -9694,13 +9694,9 @@ body.boxed {
 	color: #fff;
 }
 
-.ds .widget_shopping_cart li a + a {
-	color: #fff;
-}
 
-.ds .widget_shopping_cart li a + a:hover {
-	color: #fdd123;
-}
+
+
 
 .ds .summary .price {
 	border-color: #454545;
@@ -11612,7 +11608,7 @@ span.muted-bg {
 }
 
 .price-layout-1 .price-wrap {
-	color: #0d425e;
+	color: #fff;
 	font-family: "Fira Sans Condensed", sans-serif;
 	margin-bottom: 15px;
 	margin-top: 0;
@@ -11629,7 +11625,7 @@ span.muted-bg {
 }
 
 .price-layout-1 .plan-name h3 {
-	color: #0d425e;
+	color: #fff;
 	font-size: 20px;
 	letter-spacing: normal;
 }
@@ -11680,7 +11676,7 @@ span.muted-bg {
 .price-layout-1.plan-featured {
 	background: url("../images/price-bg.jpg") no-repeat center/cover;
 	border: none;
-	color: #0d425e;
+	color: #fff;
 	position: relative;
 	-webkit-transform: none;
 	transform: none;
@@ -15309,7 +15305,7 @@ a.fa-rss.bg-icon:hover,
 }
 
 a.fa {
-	color: #0d425e;
+	color: #fff;
 }
 
 a.border-icon {
@@ -15879,7 +15875,7 @@ a img.aligncenter {
 @media (min-width: 1200px) {
 	.sf-menu > li > a:hover,
 	.sf-menu > li.active > a {
-		color: #fdd123;
+		color: #0091e5;
 	}
 
 	.nav-narrow .sf-menu > li {
@@ -15929,7 +15925,7 @@ a img.aligncenter {
 
 	.ds .sf-menu > li > a:hover,
 	.ds .sf-menu > li.active > a {
-		color: #007bff;
+		color: #0091e5;
 	}
 
 	.ls .sf-menu > li > a {
@@ -18772,7 +18768,7 @@ img.absolute_image {
 .page_title.cover-background,
 .page_title.s-parallax {
 	background-image: url("../images/page_header.jpg");
-	filter: brightness(70%);
+	
 }
 
 .page_title h1,
