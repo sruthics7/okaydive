@@ -28,129 +28,7 @@
 		<div class="preloader_image pulse"></div>
 	</div>
 
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">�</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
-						id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
-
-		</div>
-	</div><!-- eof .modal -->
-
-	<div class="modal fade popupLogin" id="popupLogin" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content ds ms overflow-visible s-overlay s-mobile-overlay">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">�</span>
-				</button>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h4 class="color-main mb-3">Log in</h4>
-								<form class="form-registration c-mb-20 c-gutter-20" action="/">
-									<div class="row mb-4">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<input type="text" name="name" class="form-control" required=""
-													placeholder="login" aria-required="true">
-											</div>
-										</div>
-										<div class="col-sm-12">
-											<div class="form-group">
-												<input type="password" name="password" class="form-control"
-													placeholder="password" aria-required="true" required="">
-											</div>
-										</div>
-									</div>
-									<a class="registerRedirect " data-dismiss="modal" data-target="#popupRegistr"
-										data-toggle="modal" href="#">Not a member? Register!</a>
-									<button type="submit" class="btn btn-maincolor mt-30 d-block">Sign In</button>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade popupRegistr" id="popupRegistr" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content ds ms overflow-visible s-overlay s-mobile-overlay">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">�</span>
-				</button>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h4 class="color-main mb-4">Registration</h4>
-								<form class="form-registration c-mb-20 c-gutter-20" method="post" action="/">
-									<div class="row">
-										<div class="col-12">
-											<div class="form-group">
-												<input type="text" name="name" class="form-control" required=""
-													placeholder="login" aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="password" name="password" class="form-control"
-													placeholder="password" aria-required="true" required="">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="email" name="email" class="form-control"
-													placeholder="email" required="" aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="password" name="confirmPassword" class="form-control"
-													placeholder="password" required="" aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="checkbox" id="agreed" name="agreed" value="agreed"
-													required="" aria-required="true"><label for="agreed">I agree to the
-													rules</label>
-											</div>
-										</div>
-									</div>
-									<button type="submit" class="btn btn-maincolor mt-30 d-block">Registration</button>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- wrappers for visual page editor and boxed version of template -->
 	<div id="canvas">
@@ -1024,119 +902,106 @@
 
 
 			<!-- Section Testimonials -->
-			<section id="testimonials" class="ls s-pb-90 s-pt-85 s-pb-xl-160 s-pt-xl-155">
+			<section id="testimonials" class="ls s-pt-85 s-pb-90 s-pt-xl-155 s-pb-xl-160">
 				<div class="container">
-					<div class="row">
-						<div class="col-12 text-center">
-							<p class="color-darkgrey mb-1">
-								<span class="line-left">Testimonials</span>
-							</p>
-							<h3 class="mt-0 mb-2 special-heading color-darkgrey">
-								<span>What People Say</span>
-							</h3>
-							<p class="color-darkgrey fs-20 fw-500">
-								<span>We want our clients to feel awesome and unique.</span>
-							</p>
-							<div class="divider-40 divider-xl-60"></div>
-						</div>
+				  <div class="row">
+					<div class="col-12 text-center">
+					  <p class="color-darkgrey mb-1">
+						<span class="line-left">Testimonials</span>
+					  </p>
+					  <h3 class="mt-0 mb-2 special-heading color-darkgrey">
+						<span>What People Say</span>
+					  </h3>
+					  <p class="color-darkgrey fs-20 fw-500">
+						<span>We want our clients to feel awesome and unique.</span>
+					  </p>
+					  <div class="divider-40 divider-xl-60"></div>
 					</div>
-
-					<div class="row">
-						<div class="col-12">
-							<div class="quote-carousel owl-carousel" data-margin="10" data-responsive-lg="3"
-								data-responsive-md="2" data-responsive-sm="1" data-responsive-xs="1" data-dots="true"
-								data-loop="true" data-autoplay="true">
-
-								<!-- Testimonial Item -->
-								<div class="quote-item quote-layout-1 vertical-item position-relative">
-									<div class="quote-wrap text-center hero-bg position-relative p-4 rounded">
-										<img src="images/transparent-square.png" alt="testimonial" class="mb-3">
-										<div class="quote-content">
-											<h6 class="fw-bold">Eileen David</h6>
-											<p class="italic">I actually just came here to support my mum who had booked
-												a trial session… I am so glad they convinced me to try it myself and
-												overcome my fear. Such a great experience.</p>
-											<p class="social-icons mt-3">
-												<a href="#" class="fa bg-icon rounded-icon fa-facebook"
-													title="Facebook"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-twitter"
-													title="Twitter"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-linkedin"
-													title="LinkedIn"></a>
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="quote-item quote-layout-1 vertical-item position-relative">
-									<div class="quote-wrap text-center hero-bg position-relative p-4 rounded">
-										<img src="images/transparent-square.png" alt="testimonial" class="mb-3">
-										<div class="quote-content">
-											<h6 class="fw-bold">Jacey Eikenbary</h6>
-											<p class="italic">The BEST experience with Venu! I got to scuba for the
-												first time by myself. Our visibility wasn’t great in Dubai, but I’ll
-												definitely scuba again with these guys!</p>
-											<p class="social-icons mt-3">
-												<a href="#" class="fa bg-icon rounded-icon fa-facebook"
-													title="Facebook"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-twitter"
-													title="Twitter"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-linkedin"
-													title="LinkedIn"></a>
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="quote-item quote-layout-1 vertical-item position-relative">
-									<div class="quote-wrap text-center hero-bg position-relative p-4 rounded">
-										<img src="images/transparent-square.png" alt="testimonial" class="mb-3">
-										<div class="quote-content">
-											<h6 class="fw-bold">Muhammed Arif</h6>
-											<p class="italic">Great dive experience in UAE! Never miss it if you visit.
-												The staff was very supportive and friendly, making it an unforgettable
-												moment.</p>
-											<p class="social-icons mt-3">
-												<a href="#" class="fa bg-icon rounded-icon fa-facebook"
-													title="Facebook"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-twitter"
-													title="Twitter"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-linkedin"
-													title="LinkedIn"></a>
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<!-- Testimonial Item -->
-								<div class="quote-item quote-layout-1 vertical-item position-relative">
-									<div class="quote-wrap text-center hero-bg position-relative p-4 rounded">
-										<img src="images/transparent-square.png" alt="testimonial" class="mb-3">
-										<div class="quote-content">
-											<h6 class="fw-bold">Mohammed Abdul Zoheb</h6>
-											<p class="italic">Very good first-time experience with the main instructor.
-												Looking forward to boat diving. Even Muslim women can do it with an
-												abaya, as we did.</p>
-											<p class="social-icons mt-3">
-												<a href="#" class="fa bg-icon rounded-icon fa-facebook"
-													title="Facebook"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-twitter"
-													title="Twitter"></a>
-												<a href="#" class="fa bg-icon rounded-icon fa-linkedin"
-													title="LinkedIn"></a>
-											</p>
-										</div>
-									</div>
-								</div>
+				  </div>
+			  
+				  <div class="row">
+					<div class="col-12">
+					  <div class="quote-carousel owl-carousel" role="list" aria-label="Client testimonials"
+						   data-margin="10" data-responsive-lg="3" data-responsive-md="2"
+						   data-responsive-sm="1" data-responsive-xs="1" data-dots="true"
+						   data-loop="true" data-autoplay="true">
+			  
+						<!-- Single Testimonial -->
+						<article class="quote-item quote-layout-1 vertical-item position-relative" role="listitem">
+						  <div class="quote-wrap text-center hero-bg p-4 rounded">
+							<img src="images/transparent-square.png" alt="Eileen David's picture" class="mb-3 rounded-circle">
+							<div class="quote-content">
+							  <h6 class="fw-bold">Eileen David</h6>
+							  <p class="italic">I actually just came here to support my mum who had booked
+								a trial session… I am so glad they convinced me to try it myself and
+								overcome my fear. Such a great experience.</p>
+							  <div class="social-icons mt-3">
+								<a href="#" class="fa bg-icon rounded-icon fa-facebook" title="Facebook"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-twitter" title="Twitter"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-linkedin" title="LinkedIn"></a>
+							  </div>
 							</div>
-						</div>
+						  </div>
+						</article>
+			  
+						<!-- Repeat for other testimonials -->
+						<article class="quote-item quote-layout-1 vertical-item position-relative" role="listitem">
+						  <div class="quote-wrap text-center hero-bg p-4 rounded">
+							<img src="images/transparent-square.png" alt="Jacey Eikenbary's picture" class="mb-3 rounded-circle">
+							<div class="quote-content">
+							  <h6 class="fw-bold">Jacey Eikenbary</h6>
+							  <p class="italic">The BEST experience with Venu! I got to scuba for the first time by myself.
+								Our visibility wasn’t great in Dubai, but I’ll definitely scuba again with these guys!</p>
+							  <div class="social-icons mt-3">
+								<a href="#" class="fa bg-icon rounded-icon fa-facebook" title="Facebook"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-twitter" title="Twitter"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-linkedin" title="LinkedIn"></a>
+							  </div>
+							</div>
+						  </div>
+						</article>
+			  
+						<article class="quote-item quote-layout-1 vertical-item position-relative" role="listitem">
+						  <div class="quote-wrap text-center hero-bg p-4 rounded">
+							<img src="images/transparent-square.png" alt="Muhammed Arif's picture" class="mb-3 rounded-circle">
+							<div class="quote-content">
+							  <h6 class="fw-bold">Muhammed Arif</h6>
+							  <p class="italic">Great dive experience in UAE! Never miss it if you visit.
+								The staff was very supportive and friendly, making it an unforgettable moment.</p>
+							  <div class="social-icons mt-3">
+								<a href="#" class="fa bg-icon rounded-icon fa-facebook" title="Facebook"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-twitter" title="Twitter"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-linkedin" title="LinkedIn"></a>
+							  </div>
+							</div>
+						  </div>
+						</article>
+			  
+						<article class="quote-item quote-layout-1 vertical-item position-relative" role="listitem">
+						  <div class="quote-wrap text-center hero-bg p-4 rounded">
+							<img src="images/transparent-square.png" alt="Mohammed Abdul Zoheb's picture" class="mb-3 rounded-circle">
+							<div class="quote-content">
+							  <h6 class="fw-bold">Mohammed Abdul Zoheb</h6>
+							  <p class="italic">Very good first-time experience with the main instructor.
+								Looking forward to boat diving. Even Muslim women can do it with an abaya, as we did.</p>
+							  <div class="social-icons mt-3">
+								<a href="#" class="fa bg-icon rounded-icon fa-facebook" title="Facebook"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-twitter" title="Twitter"></a>
+								<a href="#" class="fa bg-icon rounded-icon fa-linkedin" title="LinkedIn"></a>
+							  </div>
+							</div>
+						  </div>
+						</article>
+			  
+					  </div>
 					</div>
+				  </div>
 				</div>
-			</section>
+			  </section>
+			  
+			  
 
-			
+
 			<section id="blog" class="ls ms s-pt-90 s-pb-60 s-pt-xl-160 s-pb-xl-130">
 				<div class="container">
 					<div class="row c-mb-30">

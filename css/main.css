@@ -11770,7 +11770,7 @@ span.muted-bg {
 	border-color: rgba(69, 69, 69, 0.4);
 }
 
-.quote-item.quote-layout-1::before {
+/* .quote-item.quote-layout-1::before {
 	align-items: center;
 	background-color: #0d425e;
 	border-radius: 50%;
@@ -11788,7 +11788,7 @@ span.muted-bg {
 	transform: translate(-50%, -50%);
 	width: 40px;
 	z-index: 2;
-}
+} */
 
 .quote-item.quote-layout-1 .quote-wrap .quote-content {
 	left: 50%;
