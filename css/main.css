@@ -18771,7 +18771,8 @@ img.absolute_image {
 
 .page_title.cover-background,
 .page_title.s-parallax {
-	background-image: url("../images/pagehead.jpg");
+	background-image: url("../images/page_header.jpg");
+	filter: brightness(70%);
 }
 
 .page_title h1,
@@ -19534,3 +19535,15 @@ img.absolute_image {
 .checkbox-slider--b-flat input + span:before {
 	box-shadow: none;
 }
+.pricing-plan {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+  }
+  .pricing-body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+  }
+  
