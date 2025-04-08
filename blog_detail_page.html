@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Okaydive</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="images/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+    <!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+    <div class="preloader">
+        <div class="preloader_image pulse"></div>
+    </div>
+
+    <!-- search modal -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="widget widget_search">
+            <form method="get" class="searchform search-form" action="/">
+                <div class="form-group">
+                    <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+                        id="modal-search-input">
+                </div>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls p-normal">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+        </div>
+    </div><!-- eof .modal -->
+
+    <div class="modal fade popupLogin" id="popupLogin" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ds ms overflow-visible s-overlay s-mobile-overlay">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="color-main mb-3">Log in</h4>
+                                <form class="form-registration c-mb-20 c-gutter-20" action="/">
+                                    <div class="row mb-4">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" required
+                                                    placeholder="login" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <input type="password" name="password" class="form-control"
+                                                    placeholder="password" aria-required="true" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="registerRedirect " data-dismiss="modal" data-target="#popupRegistr"
+                                        data-toggle="modal" href="#">Not a member? Register!</a>
+                                    <button type="submit" class="btn btn-maincolor mt-30 d-block">Sign In</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade popupRegistr" id="popupRegistr" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content ds ms overflow-visible s-overlay s-mobile-overlay">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="color-main mb-4">Registration</h4>
+                                <form class="form-registration c-mb-20 c-gutter-20" method="post" action="/">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control" required
+                                                    placeholder="login" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="password" name="password" class="form-control"
+                                                    placeholder="password" aria-required="true" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control"
+                                                    placeholder="email" required aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="password" name="confirmPassword" class="form-control"
+                                                    placeholder="password" required aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="agreed" name="agreed" value="agreed" required
+                                                    aria-required="true"><label for="agreed">I agree to the
+                                                    rules</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-maincolor mt-30 d-block">Registration</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
+
+            <!-- template sections -->
+
+
+            <div class="header_absolute ds cover-background ">
+                <!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
+                <header class="page_header ds ms s-overlay">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-3 col-11">
+                                <a href="./" class="logo">
+                                    <img src="images/logo_img.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="col-xl-8 col-lg-5 col-1">
+                                <!-- main nav start -->
+                                <nav class="top-nav">
+                                    <ul class="nav sf-menu">
+                                        <li class="active">
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+
+                                        <!-- about -->
+                                        <li>
+                                            <a href="about.html">About</a>
+                                            <ul>
+
+                                                <li>
+                                                    <a href="packages.html">Packages</a>
+                                                </li>
+                                                <li>
+                                                    <a href="courses.html">Courses</a>
+                                                </li>
+                                                <li>
+                                                    <a href="about.html">Who We are</a>
+                                                </li>
+                                                <li>
+                                                    <a href="faq.html">Faq</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="gallery.html">Gallery</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html">Contact</a>
+
+                                                </li>
+
+
+
+                                            </ul>
+                                        </li>
+                                        <!-- services -->
+
+                                        <li>
+                                            <a href="services.html">Services</a>
+                                            <ul>
+
+                                                <li>
+                                                    <a href="service_1.html">Scuba Diving</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Freediving</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Dive Tips</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.dubaiefoil.ae/">E-foil</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Kayak</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- eof features -->
+
+
+                                        <li>
+                                            <a href="about.html">Became A Pro</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">PADI DIVEMASTER COURSE</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <!-- eof pages -->
+
+
+                                        <!-- contacts -->
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+
+                                        </li>
+                                        <!-- eof contacts -->
+                                    </ul>
+
+
+                                </nav>
+                                <!-- eof main nav -->
+                            </div>
+                            <div class="col-xl-2 col-lg-3 text-right d-none d-lg-block">
+                                <a class="fs-20 links-maincolor-hover" href="tel:+88003532455"><mark>+1234</mark>
+                                    56789</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header toggler -->
+                    <span class="toggle_menu"><span></span></span>
+                </header>
+
+            </div>
+
+            <section class="page_title ds s-parallax s-overlay s-pt-160 s-pb-80">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <h1>Blog Detail Page</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="./">Home</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">About</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Blog Detail Page
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ls s-py-90 s-py-xl-160">
+                <div class="container">
+                    <div class="row c-gutter-60">
+                        <main class="col-lg-7 col-xl-8">
+                            <article
+                                class="vertical-item content-padding hero-bg post type-post status-publish format-standard has-post-thumbnail">
+
+                                <!-- .post-thumbnail -->
+                                <div class="item-media post-thumbnail">
+                                    <img src="images/blog_detail.jpg" alt="img">
+                                </div>
+
+
+                                <div class="item-content">
+                                    <header class="entry-header">
+                                        <span class="cat-links">
+
+                                            <span class="screen-reader-text">Categories</span>
+                                            <a href="blog-right.html" rel="category tag">
+                                                Blog
+                                            </a>
+
+                                        </span>
+                                        <div class="entry-meta">
+                                            <span>
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <a href="blog-single-right.html" rel="bookmark">
+                                                    <time class="entry-date published updated"
+                                                        datetime="2018-03-18T15:15:12+00:00">09.04.2024</time>
+                                                </a>
+                                            </span>
+                                            <span class="comments-link">
+                                                <i class="fa fa-comments"></i>
+                                                <span class="screen-reader-text">4 Comments</span>
+                                                <a href="blog-single-right.html">4</a>
+                                            </span>
+
+                                        </div>
+                                        <!-- .entry-meta -->
+
+                                    </header>
+                                    <!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <h2 class="entry-title mb-3">
+                                            <a href="blog-single-right.html" rel="bookmark">
+                                                How do you prepare for a diving adventure?
+
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            Diving is a fantastic experience that opens into a mesmerizing world beneath
+                                            the waves. Whether you're exploring scuba diving in Dubai, proper
+                                            preparation is essential for a safe and enjoyable experience. Let’s dive
+                                            into the key steps to ensure you're fully prepared for your underwater
+                                            adventure.
+
+
+
+
+                                        </p>
+                                        <h4 class="entry-title mb-3">
+                                            <a href="blog-single-right.html" rel="bookmark">
+                                                Identity suitable diving Sites
+
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            If you choose to travel to a destination where you rent a room or apartment,
+                                            I would strongly suggest having accommodation right at the kite spot. And of
+                                            course, you should inform yourself about the local health situation (health
+                                            hazards and health care) a lot more in detail than when you just travel on
+                                            your own.
+                                        </p>
+                                        <h4 class="entry-title mb-3">
+                                            <a href="blog-single-right.html" rel="bookmark">
+                                                Find a Reputable Dive Operator
+
+
+
+                                            </a>
+                                        </h4>
+                                        <p>
+                                            Choose a reputable dive operator with certified diving instructors and a
+                                            strong safety record. Read reviews, ask for recommendations and verify their
+                                            credentials before booking your Dive. Okaydive provides the best diving
+                                            courses in Dubai. Their experienced trainers will guide you in this regard.
+                                            Being the best diving operators in Dubai, you can contact them to realize
+                                            your adventure dreams.
+                                        </p>
+                                    </div>
+                                    <!-- .entry-content -->
+                                    <div class="entry-footer">
+                                        <p class="social-icons">
+                                            <a href="#" class="fa bg-icon rounded-icon fa-facebook"
+                                                title="facebook"></a>
+                                            <a href="https://www.facebook.com/"
+                                                class="fa bg-icon rounded-icon fa-facebook" title="facebook"></a>
+                                            <a href="https://twitter.com/" class="fa bg-icon rounded-icon fa-twitter"
+                                                title="twitter"></a>
+                                        </p>
+
+                                    </div>
+                                    <div class="tag-wrapper mt-20">
+                                        <span class="tag-links">
+                                            <a href="blog-single-right.html" rel="tag">Post</a>
+                                            <a href="blog-single-right.html" rel="tag">Simple post</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- .item-content -->
+                            </article>
+
+                            <div class="divider-60"></div>
+
+                            <div class="entry-content">
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Complete a Diving Certification Course
+
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    If you're new to diving, enrolling in a freedive course in Dubai or an open water
+                                    diving course in Dubai is essential. OkayDive provides certified PADI courses
+                                    tailored for both beginners and experienced divers, equipping you with the skills
+                                    and confidence to explore the deep blue.
+
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Practice Basic Skills
+
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    Before diving, practice basic diving skills such as mask clearing, regulator
+                                    retrieval and buoyancy control in a controlled environment. Familiarizing yourself
+                                    with these skills will boost your confidence underwater..
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Checking Diving Gears
+
+
+
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    Ensure your dive gear is in perfect condition. Inspect your diving mask, snorkel,
+                                    fins, BCD (buoyancy control device) and regulator for any signs of damage—test
+                                    equipment functionality before diving.
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Arrange Diving Logistics
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    Plan the logistics of your Dive, including transportation to the dive site, diving
+                                    frequency and any necessary permits or paperwork. Arrive early to the dive site to
+                                    allow time for equipment setup and pre-dive briefings.
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Stay hydrated and take adequate rest.
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    Stay hydrated and well-rested before your Dive. Dehydration and fatigue can impair
+                                    diving performance and increase the risk of decompression sickness. Avoid alcohol
+                                    and heavy meals before diving.
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Review Diving Safety Protocols
+                                    </a>
+                                </h4>
+                                <p>
+                                    Before entering the water, review diving safety protocols with your instructor.
+                                    Discuss hand signals, emergency procedures and dive plans to ensure clear
+                                    communication and coordinated emergency response.
+                                </p>
+                                <h4 class="entry-title mb-3">
+                                    <a href="blog-single-right.html" rel="bookmark">
+                                        Protect Your Skin
+
+                                    </a>
+                                </h4>
+                                <p>
+                                    Apply sunscreen to exposed skin before your Dive to protect against sunburn. Use
+                                    reef-safe sunscreen to minimize environmental impact on coral reefs and marine life.
+                                </p>
+                            </div>
+
+                        </main>
+
+                        <aside class="col-lg-5 col-xl-4">
+                            
+
+                            <div class="widget widget_categories">
+
+                                <h3 class="widget-title">Services</h3>
+
+                                <ul>
+                                    <li class="cat-item">
+                                        <a href="blog-right.html">Scuba Diving</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="blog-right.html">Free Diving</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="blog-right.html">Dive Trips</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="blog-right.html">E E-foil</a>
+                                    </li>
+                                    <li class="cat-item">
+                                        <a href="blog-right.html">Kayak</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+
+
+                            <div class="ls ms">
+                                <div class="widget widget_search hero-bg">
+
+                                    <div class="  text-center p-3">
+                                        <div class="card-body">
+                                            <h5>Explore Now
+                                            </h5>
+                                            <p class="card-text text-muted">Enjoy an unforgettable diving adventure with
+                                                expert guides.</p>
+
+                                            <a href="./pricing.html" class="btn btn-maincolor btn-small">Book Now</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                           
+
+                            <div class="widget widget_recent_posts">
+
+                                <h3 class="widget-title">Recent Posts</h3>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <a class="media-image" href="blog-single-right.html">
+                                            <img src="images/courses_1.jpeg" alt="img">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>
+                                                <a href="blog-single-right.html">PADI Dive Master - The Master of the Underwater World</a>
+                                            </h4>
+                                            <p class="item-meta">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> Dec 18, 2018
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="media">
+                                        <a class="media-image" href="blog-single-right.html">
+                                            <img src="images/courses_2.jpg" alt="img">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>
+                                                <a href="blog-single-right.html">Safety Tips for First-Time Efoilers in Dubai
+                                                </a>
+                                            </h4>
+                                            <p class="item-meta">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> Nov 22, 2018
+                                            </p>
+
+                                        </div>
+                                    </li>
+
+                                    <li class="media">
+                                        <a class="media-image" href="blog-single-right.html">
+                                            <img src="images/courses_3.jpg" alt="img">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4>
+                                                <a href="blog-single-right.html">Discover the Underwater World: Certified Diving Courses in Dubai</a>
+                                            </h4>
+                                            <p class="item-meta">
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i> Nov 12, 2018
+                                            </p>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="page_footer ds ms s-py-90 s-py-xl-160 c-gutter-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 text-center text-lg-left animate" data-animation="fadeInUp">
+                            <div class="widget widget_text">
+                                <img src="images/logo_img.png" alt="logo">
+                                <p>
+                                    An opportunity to experience the soulful activity of scuba diving in Kerala along
+                                    with many other diving services.
+                                </p>
+                                <p class="social-icons">
+                                    <a href="https://www.facebook.com/" class="fa bg-icon rounded-icon fa-facebook"
+                                        title="facebook"></a>
+                                    <a href="https://twitter.com/" class="fa bg-icon rounded-icon fa-twitter"
+                                        title="twitter"></a>
+                                    <a href="https://www.instagram.com/" class="fa bg-icon rounded-icon fa-instagram"
+                                        title="instagram"></a>
+                                </p>
+                            </div>
+                            <div class="divider-60 divider-lg-0"></div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-5 text-center text-lg-left animate" data-animation="fadeInUp">
+                            <div class="widget widget_nav_menu">
+                                <h3>Userful Link</h3>
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="services.html">Services</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Became a Pro</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="divider-60 divider-lg-0"></div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 text-center text-lg-left animate" data-animation="fadeInUp">
+                            <div class="widget widget_flickr">
+
+                                <h3 class="widget-title">Contact Us</h3>
+                                <ul class="flickr_ul">
+                                    dummy street 123
+
+                                    Email:dummy@gmail.com <br>
+                                    Phone:+123 456789
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <section class="page_copyright ls s-py-25">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 text-center">
+                            <p>Copyright ©
+                                <span class="copyright_year">2025</span> OkayDive, All Rights Reserved. Developed by
+                                Xeventure
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div><!-- eof #box_wrapper -->
+    </div><!-- eof #canvas -->
+
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/switcher.js"></script>
+
+</body>
+
+</html>

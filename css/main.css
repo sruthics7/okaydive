@@ -123,11 +123,12 @@ body {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 1.5;
+	line-height: 1.9;
 	overflow: visible;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	position: relative;
+	
 }
 
 h1,
@@ -10426,6 +10427,9 @@ body.boxed {
 
 .hero-bg {
 	background-color: #eef3f5;
+	border-radius: 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow */
+
 }
 
 .muted-bg {
