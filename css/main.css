@@ -8658,7 +8658,6 @@ body.boxed {
 	border-radius: 30px;
 	color: #062637;
 	display: inline-block;
-	height: 40px;
 	overflow: hidden;
 	padding: 9px 50px 8px 25px;
 	position: relative;
@@ -19547,3 +19546,47 @@ img.absolute_image {
 	justify-content: space-between;
   }
   
+  .vertical-item.service-layout-1 {
+    height: 800px; /* or adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+}
+
+.item-content-wrap {
+    flex-grow: 1;
+}
+
+.btn-booking {
+    display: inline-block;
+    
+}
+/* Responsive Heights */
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .vertical-item.service-layout-1 {
+        height: 480px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .vertical-item.service-layout-1 {
+        height: 460px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .vertical-item.service-layout-1 {
+        height: auto;
+    }
+}
